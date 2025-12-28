@@ -41,9 +41,9 @@ Os protocolos abaixo descrevem práticas recomendadas para diferentes situaçõe
 
 🔹 Desenvolvimento e Fluxo de Trabalho
   
-  •	[Fluxo de Desenvolvimento Não Executável / Caótico](protocolos/fluxo-desenvolvimento-caotico.md)
-  
-  •	[Fluxo de Melhoria de Software](protocolos/fluxo-melhoria-software.md)
+  - [Fluxo de Desenvolvimento Não Executável / Caótico](protocolos/fluxo-desenvolvimento-caotico.md)
+  - [Fluxo de Melhoria de Software](protocolos/fluxo-melhoria-software.md)
+  - [Fluxo de Criação de Bullets](protocolos/fluxo-criacao-bullets.md)
 
 Protocolo para estruturar demandas que não podem ser automatizadas por scripts, ajudando a reduzir pressão, melhorar estimativas e aumentar a qualidade das entregas.
 
