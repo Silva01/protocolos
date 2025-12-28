@@ -40,8 +40,11 @@ Este projeto existe para **quebrar esse ciclo**, oferecendo:
 Os protocolos abaixo descrevem práticas recomendadas para diferentes situações do dia a dia de desenvolvimento:
 
 🔹 Desenvolvimento e Fluxo de Trabalho
-•	[Fluxo de Desenvolvimento Não Executável / Caótico](protocolos/fluxo-desenvolvimento-caotico.md)
-•	[Fluxo de Melhoria de Software](protocolos/fluxo-melhoria-software.md)
+  
+  •	[Fluxo de Desenvolvimento Não Executável / Caótico](protocolos/fluxo-desenvolvimento-caotico.md)
+  
+  •	[Fluxo de Melhoria de Software](protocolos/fluxo-melhoria-software.md)
+
 Protocolo para estruturar demandas que não podem ser automatizadas por scripts, ajudando a reduzir pressão, melhorar estimativas e aumentar a qualidade das entregas.
 
 Novos protocolos serão adicionados conforme os fluxos evoluem (bugs, features, refactors, estudos técnicos, etc.).
