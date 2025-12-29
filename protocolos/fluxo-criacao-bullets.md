@@ -98,3 +98,10 @@ Um bullet é considerado válido quando:
 Poucos bullets, bem escolhidos, escritos com calma e aplicados com rigor geram mais qualidade do que listas extensas sem ação.
 
 Qualidade é um ritmo, não um esforço pontual.
+
+---
+
+## Padrão aplicavél em Código
+````java
+//TODO: [CATEGORIA] - [] descrição (O que é] → [o que isso causa])
+````
