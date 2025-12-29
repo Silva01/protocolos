@@ -151,7 +151,7 @@ Registrar **uma frase**.
 
 ---
 
-## 10️⃣ Proteção Pós-Bug
+## 1️⃣0️⃣ Proteção Pós-Bug
 
 Adicionar **uma proteção consciente**:
 - Teste
