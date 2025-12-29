@@ -41,9 +41,12 @@ Os protocolos abaixo descrevem práticas recomendadas para diferentes situaçõe
 
 🔹 Desenvolvimento e Fluxo de Trabalho
   
-  - [Fluxo de Desenvolvimento Não Executável / Caótico](protocolos/fluxo-desenvolvimento-caotico.md)
-  - [Fluxo de Melhoria de Software](protocolos/fluxo-melhoria-software.md)
-  - [Fluxo de Criação de Bullets](protocolos/fluxo-criacao-bullets.md)
+  - [Protocolo de Desenvolvimento Não Executável / Caótico](protocolos/fluxo-desenvolvimento-caotico.md)
+  - [Protocolo de Melhoria de Software](protocolos/fluxo-melhoria-software.md)
+  - [Protocolo de Criação de Bullets](protocolos/fluxo-criacao-bullets.md)
+  - [Protocolo Mushin para Feature](protocolos/mushin-para-feature.md)
+  - [Protocolo Mushin para Bugs](protocolos/mushin-para-bugs.md)
+  - [Protocolo Mushin para Bugs Intermitentes](protocolos/mushin-para-bugs-intermitentes.md)
 
 Protocolo para estruturar demandas que não podem ser automatizadas por scripts, ajudando a reduzir pressão, melhorar estimativas e aumentar a qualidade das entregas.
 
