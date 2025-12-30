@@ -1,170 +1,204 @@
-🧠 Protocolo — Treino de Regras Arquiteturais Baseadas em Sinais
+# **📐 TEMPLATE — Protocolo de Treino de Regras Arquiteturais**
 
-Objetivo
+> **Uso:** copie este template para cada ciclo de análise (classe, módulo ou PR) e preencha os campos conforme avança pelas fases.
 
-Treinar o raciocínio arquitetural para:
-	•	observar sinais arquiteturais
-	•	evitar decisões prematuras
-	•	escrever regras que criam consciência, não obrigação
-	•	amadurecer julgamento arquitetural de forma consistente
+---
 
-⸻
+## **🧠 Visão Geral**
 
-📍 Princípio Base
+**Objetivo do Ciclo:** <descrever brevemente o que será analisado>  
 
-Arquitetura trabalha com sinais e impactos, não com ordens e soluções.
+**Escopo:** <classe | módulo | PR | feature>  
 
-Toda regra nasce de um sinal observado, não de uma ação desejada.
+**Data:** <dd/mm/aaaa>  
 
-⸻
+**Autor:** 
 
-🧩 FASE 1 — OBSERVAÇÃO (Leitura consciente)
+---
 
-Duração: 5–10 minutos  
-Frequência: diária ou por classe analisada
+## **📍 Princípio Base**
 
-Checklist mental (não escrever ainda):
-	•	Onde esse código cresce quando adiciono uma feature?
-	•	Onde o nome não bate com o comportamento?
-	•	Onde a estrutura se repete?
-	•	O que esse código está tentando esconder?
-	•	Onde a mudança custa mais do que deveria?
+> **Arquitetura trabalha com sinais e impactos, não com ordens e soluções.**
 
-⚠️ Regra da fase:  \
+Toda regra nasce de um **sinal observado**, não de uma **ação desejada**.
 
-Não pensar em solução.
+---
 
-⸻
+## **🧩 FASE 1 — OBSERVAÇÃO (Leitura consciente)**
 
-🧩 FASE 2 — REGISTRO DO SINAL (TODO técnico)
+**Tempo sugerido:** 5–10 minutos
 
-Formato obrigatório do TODO
-	•	Sem verbo de ação
-	•	Sem solução
-	•	Apenas observação + sinal
+### **Checklist mental (não escrever soluções):**
 
+- Onde esse código cresce quando adiciono uma feature?
+  
+- Onde o nome não bate com o comportamento?
+  
+- Onde a estrutura se repete?
+  
+- O que esse código está tentando esconder?
+  
+- Onde a mudança custa mais do que deveria?
+  
+
+**Notas rápidas (opcional):**
+
+```
+<observações factuais, sem julgamento>
+```
+
+⚠️ **Regra da fase:** não pensar em solução.
+
+---
+
+## **🧩 FASE 2 — REGISTRO DO SINAL (TODO técnico)**
+
+### **Padrão obrigatório de TODO**
+
+- Sem verbo de ação
+  
+- Sem solução
+  
+- Apenas observação + sinal
+  
+
+```
 // TODO[CATEGORIA]: <sinal arquitetural observado>
+```
 
+### **Exemplos**
 
-Exemplos
-
+```
 // TODO[CRESCIMENTO]: Nova feature exige novo método na mesma classe
-
 // TODO[INTENCAO]: Classe atua como dispatcher, mas está nomeada como Service
-
 // TODO[DUPLICIDADE]: Métodos compartilham a mesma estrutura de execução
+```
 
+❌ **Proibido nesta fase:** extrair, refatorar, criar, mudar.
 
-❌ Proibido nesta fase:
-	•	extrair
-	•	refatorar
-	•	criar
-	•	mudar
+---
 
-⸻
+## **🧩 FASE 3 — CONSOLIDAÇÃO (Markdown)**
 
-🧩 FASE 3 — CONSOLIDAÇÃO (Markdown)
+**Ferramenta:** script automático  
 
-Ferramenta: script automático  
-Saída: lista de bullets técnicos
+**Saída esperada:** lista de bullets técnicos
 
-Nesta fase:
-	•	Não criar regras
-	•	Não decidir soluções
-	•	Apenas ler os padrões emergentes
+### **Leitura de padrões**
 
-Pergunta-chave:  \
+- O sinal aparece mais de uma vez?
+  
+- O sinal aparece em mais de uma classe/módulo?
+  
+- O sinal é recorrente ao longo do tempo?
+  
 
-Esse sinal apareceu mais de uma vez?
+**Resumo dos padrões observados:**
 
-⸻
+```
+<padrões recorrentes, sem decisões>
+```
 
-🧩 FASE 4 — MATURAÇÃO (Tempo)
+---
 
-Regra absoluta do protocolo
+## **🧩 FASE 4 — MATURAÇÃO (Tempo)**
 
-❌ Nunca escrever a regra no mesmo dia do bullet
+> ❌ **Nunca escrever a regra no mesmo dia do bullet**
 
-Intervalo mínimo recomendado:
-	•	1 dia
-	•	Ideal: após analisar outra classe
+**Intervalo aplicado:** <1 dia | 2 dias | após outra análise>
 
-🧠 Objetivo:
-	•	reduzir viés emocional
-	•	ganhar neutralidade
-	•	melhorar linguagem
+**Objetivo:** reduzir viés emocional, ganhar neutralidade e melhorar linguagem.
 
-⸻
+---
 
-🧩 FASE 5 — ESCRITA DA REGRA (Arquitetural)
+## **🧩 FASE 5 — ESCRITA DA REGRA (Arquitetural)**
 
-Template oficial de Regra
+### **Template oficial de Regra**
 
+```
 [Regra]
 Quando <condição observável>,
 isso indica <sinal arquitetural>,
 e tende a <impacto estrutural ao longo do tempo>.
+```
 
-Exemplos
+### **Regra proposta (preencher):**
 
+```
 [Regra]
-Quando a adição de novas features exige a criação recorrente de novos métodos em uma mesma classe,
-isso indica violação do princípio do OCP,
-e tende a aumentar acoplamento e complexidade estrutural.
+Quando <...>,
+isso indica <...>,
+e tende a <...>.
+```
 
-[Regra]
-Quando múltiplos métodos compartilham a mesma estrutura de execução,
-isso indica a existência de comportamento comum,
-cuja duplicação tende a aumentar custo de manutenção e risco de inconsistência.
+---
 
+## **🧩 FASE 6 — VALIDAÇÃO DA REGRA**
 
-⸻
+Marque apenas quando verdadeiro:
 
-🧩 FASE 6 — VALIDAÇÃO DA REGRA
+- A regra descreve um **sinal**, não uma solução
+  
+- Ela vale fora deste caso específico
+  
+- Ela admite exceções implícitas
+  
+- Ela ajuda a pensar melhor (não a obedecer)
+  
+- Ela ainda faria sentido daqui a 1 ano
+  
 
-Antes de aceitar a regra, validar com este checklist:
-	•	🔲 A regra descreve um sinal, não uma solução?
-	•	🔲 Ela vale fora dessa classe específica?
-	•	🔲 Ela admite exceções implícitas?
-	•	🔲 Ela ajuda alguém a pensar melhor, não a obedecer?
-	•	🔲 Ela ainda faria sentido daqui a 1 ano?
+**Status da Regra:**  \
 
-Se falhar em 2 ou mais → regra ainda verde.
+- Verde (precisa amadurecer)  \
+  
+- Amarela (válida com ressalvas)  \
+  
+- Verde-madura (reutilizável)
+  
 
-⸻
+---
 
-🧠 HEURÍSTICAS MENTAIS (para treinar o cérebro)
+## **🧠 Heurísticas Mentais (lembrete rápido)**
 
-Substituir automaticamente:
+| **Evitar** | **Preferir** |
+| --- | --- |
+| deve | indica |
+| precisa | sinaliza |
+| sempre | tende a |
+| errado | arriscado |
+| corrigir | avaliar |
 
-Evitar	Usar
-deve	indica
-precisa	sinaliza
-sempre	tende a
-errado	arriscado
-corrigir	avaliar
+---
 
+## **⏱️ Ritmo do Ciclo**
 
-⸻
+- 1 classe → 1 a 3 bullets
+  
+- 1 regra → somente após 2+ ocorrências
+  
+- Regra boa é curta e deliberadamente “incompleta”
+  
 
-⏱️ RITMO RECOMENDADO
-	•	1 classe → 1 a 3 bullets
-	•	1 regra → somente após 2+ ocorrências
-	•	Melhor regra é curta e “incompleta”
+---
 
-⸻
+## **🏁 Critério de Sucesso**
 
-🏁 CRITÉRIO DE SUCESSO DO PROTOCOLO
+Você saberá que o ciclo funcionou quando:
 
-Você saberá que o protocolo está funcionando quando:
-	•	regras prescritivas começarem a incomodar
-	•	você escrever menos e pensar mais
-	•	identificar problemas sem urgência de resolver
-	•	regras parecerem “chatas, mas verdadeiras”
+- regras prescritivas começarem a incomodar
+  
+- você escrever menos e pensar mais
+  
+- identificar problemas sem urgência de resolver
+  
+- regras parecerem “chatas, mas verdadeiras”
+  
 
-⸻
+---
 
-🧠 FRASE-ÂNCORA
+## **🧠 Frase-Âncora**
 
-Arquitetura não é decidir o que fazer.  
-É perceber o que está acontecendo antes que vire problema.
+> **Arquitetura não é decidir o que fazer.**  
+
+> **É perceber o que está acontecendo antes que vire problema.**
