@@ -49,8 +49,11 @@ Formato obrigatório do TODO
 Exemplos
 
 // TODO[CRESCIMENTO]: Nova feature exige novo método na mesma classe
+
 // TODO[INTENCAO]: Classe atua como dispatcher, mas está nomeada como Service
+
 // TODO[DUPLICIDADE]: Métodos compartilham a mesma estrutura de execução
+
 
 ❌ Proibido nesta fase:
 	•	extrair
