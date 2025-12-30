@@ -47,6 +47,7 @@ Os protocolos abaixo descrevem práticas recomendadas para diferentes situaçõe
   - [Protocolo Mushin para Feature](protocolos/mushin-para-feature.md)
   - [Protocolo Mushin para Bugs](protocolos/mushin-para-bugs.md)
   - [Protocolo Mushin para Bugs Intermitentes](protocolos/mushin-para-bugs-intermitentes.md)
+  - [Protocolo para criação de regras](protocolos/estudo-criacao-regras.md)
 
 Protocolo para estruturar demandas que não podem ser automatizadas por scripts, ajudando a reduzir pressão, melhorar estimativas e aumentar a qualidade das entregas.
 
