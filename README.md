@@ -49,6 +49,7 @@ Os protocolos abaixo descrevem práticas recomendadas para diferentes situaçõe
   - [Protocolo Mushin para Bugs Intermitentes](protocolos/mushin-para-bugs-intermitentes.md)
   - [Protocolo para criação de regras](protocolos/estudo-criacao-regras.md)
   - [Protocolo para aprender inglês](protocolos/aprendizado-ingles.md)
+  - [Modelo de criação de Bullets](protocolos/modelo-criacao-bullets.md)
 
 Protocolo para estruturar demandas que não podem ser automatizadas por scripts, ajudando a reduzir pressão, melhorar estimativas e aumentar a qualidade das entregas.
 
