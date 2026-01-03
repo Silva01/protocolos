@@ -144,3 +144,15 @@ Você saberá que o protocolo está funcionando quando:
 > **Ele apenas aponta.**
 
 ````
+
+### Validação
+
+Antes de aceitar o bullet, valide
+
+````text
+[ ] Eu consigo apontar isso no código com o dedo?
+[ ] Não usei "porque", "isso causa", "isso tende a"?
+[ ] Não mencionei princípio, impacto ou futuro?
+[ ] Se eu apagar o bullet amanhã, nada quebra?
+
+````
